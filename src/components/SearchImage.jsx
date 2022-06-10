@@ -61,7 +61,7 @@ class App extends Component {
     if (search) {
       this.setState({ search, images: [] });
     } else {
-      this.setState({ images: [], error: 'Результат поиска зависит от качества поискового запроса! Введите поисковой запрос! :)' });
+      this.setState({ images: [], error: 'Нет, такие фокусы не работают! Напишите что ищем? :)' });
     }
   };
 
@@ -99,7 +99,7 @@ class App extends Component {
         </div>
         {error && <p> {error}</p>}
         {!images.length && search && !loading && !error && (
-          <p>По запросу ничего не найдено!</p>
+          <p> Упс... Ничего не найдено, давай переформулируем запрос и попробуем еще раз!</p>
         )}
 
         <ImageGallery onOpenModal={showModal} images={images} />
