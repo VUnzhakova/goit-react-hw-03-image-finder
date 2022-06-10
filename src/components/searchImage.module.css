@@ -1,0 +1,15 @@
+.searchContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding-bottom: 24px;
+}
+
+.container {
+  position: relative;
+  z-index: 5;
+}
+
+.imageBox {
+  max-width: 768px;
+}
