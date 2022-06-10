@@ -61,7 +61,7 @@ class App extends Component {
     if (search) {
       this.setState({ search, images: [] });
     } else {
-      this.setState({ images: [], error: 'Пожалуйста введите текст!' });
+      this.setState({ images: [], error: 'Результат поиска зависит от качества поискового запроса! Введите поисковой запрос! :)' });
     }
   };
 
