@@ -51,13 +51,13 @@ export class App extends Component {
       .then(({ hits, totalHits }) => {
         if (hits.length === 0) {
           return Notify.warning(
-            'Sorry, there are no images matching your search query. Please try again'
+            'Результат поиска зависит от качества запроса. Давайте попробуем еще раз :)'
           );
         }
 
         if (totalHits === 0) {
           return Notify.info(
-            'We are sorry, but you have reached the end of search results.'
+            'Пока-что это всё, что удалось найти...'
           );
         }
 

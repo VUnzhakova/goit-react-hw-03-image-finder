@@ -16,11 +16,11 @@ class Searchbar extends Component {
     const query = this.state.searchQuery.trim();
 
     if (query === '') {
-      return Notify.warning('Please, fill the main field');
+      return Notify.warning('Пожалуйста введите запрос!');
     }
 
     this.props.onSubmit(query);
-    // this.setState({ searchQuery: '' });
+    
   };
 
   render() {
@@ -28,7 +28,7 @@ class Searchbar extends Component {
       <header className={s.Searchbar}>
         <form className={s.form} onSubmit={this.handleSubmit}>
           <button type="submit" className={s.button}>
-            <SearchIcon width="35" height="35" />
+            <SearchIcon width="20" height="20" />
             <span className={s.label}>Search</span>
           </button>
           <input
